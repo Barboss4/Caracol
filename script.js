@@ -1,7 +1,7 @@
 var vidas = 3;
 
 function Cara() {
-    var resultado = Math.floor(Math.random() * 2) + 1;
+    var resultado = Math.floor(Math.random() * 5) + 1;
     if (resultado === 1) {
         document.querySelector("h1").innerText = "Cara! Você ganhou!";
         vidas++
@@ -13,7 +13,7 @@ function Cara() {
 }
 
 function Coroa() {
-    var resultado = Math.floor(Math.random() * 2) + 1;
+    var resultado = Math.floor(Math.random() * 5) + 1;
     if (resultado === 1) {
         document.querySelector("h1").innerText = "Coroa! Você ganhou!";
         vidas++
