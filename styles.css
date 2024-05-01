@@ -1,0 +1,135 @@
+/* Estilo para a página */
+body {
+margin: 0;
+padding: 0;
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; /* Para centralizar verticalmente o conteúdo */
+height: 100vh;
+text-align: center;
+}
+
+
+.buttons {
+margin: 20px auto;
+padding: 15px 25px; /* Ajuste o padding para aumentar o tamanho do botão */
+font-size: 18px; /* Ajuste o tamanho da fonte */
+background-color: #ff6600; /* Cor de fundo do botão */
+color: #ffffff; /* Cor do texto do botão */
+border: none; /* Remove a borda do botão */
+border-radius: 10px; /* Adiciona bordas arredondadas */
+cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
+transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+.buttons:hover {
+background-color: #ffffff;
+color: #ff8533; /* Altera a cor de fundo quando o mouse passa sobre o botão */
+}
+
+/* Estilo para o botão de jogar novamente */
+.restartButton {
+margin: 20px auto; /* Margens superior e inferior de 20px e alinhamento central horizontal */
+padding: 15px 30px; /* Espaçamento interno */
+background-color: #ff6600; /* Cor de fundo do botão */
+border-radius: 10px; /* Adiciona bordas arredondadas */
+color: #ffffff;
+border: none; /* Remove a borda do botão */
+border-radius: 10px; /* Adiciona bordas arredondadas */
+cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+}
+
+.restartButton:hover {
+  background-color: #ffffff;
+  color: #ff8533; /* Altera a cor de fundo quando o mouse passa sobre o botão */
+  }
+
+
+/*
+  Este CSS da moeda girando foi criado por Adam, 
+  e pode ser encontrado em: https://codepen.io/adamjld/pen/oNmRJR
+*/
+
+#euro{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50px; /* Ajuste para posicionar acima do título */
+  left: 50%; /* Mantenha no centro horizontal */
+  margin-left: -75px; /* Ajuste para centralizar a moeda */
+  transform-style: preserve-3d;
+  animation: spin 2.5s linear infinite;
+  z-index: 2; /* Garantir que fique na frente do título */
+}
+
+h1 {
+  position: relative; /* Garantir que outros elementos se ajustem adequadamente */
+}
+
+.back{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/133687/backeuro.png");
+  width: 150px;
+  height: 150px;
+}
+
+.middle{
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/133687/faceeuro.png");
+  width: 150px;
+  height: 150px;
+  transform: translateZ(1px);
+  position: absolute;
+  top: 0;
+}
+
+.front{
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/133687/faceeuro.png");
+    height: 150px;
+    position: absolute;
+    top: 0;
+    transform: translateZ(10px);
+    width: 150px;
+}
+
+.middle:nth-child(1){
+  transform: translateZ(1px);
+}
+
+.middle:nth-child(2){
+  transform: translateZ(2px);
+}
+
+.middle:nth-child(3){
+  transform: translateZ(3px);
+}
+
+.middle:nth-child(4){
+  transform: translateZ(4px);
+}
+
+.middle:nth-child(5){
+  transform: translateZ(5px);
+}
+
+.middle:nth-child(6){
+  transform: translateZ(6px);
+}
+
+.middle:nth-child(7){
+  transform: translateZ(7px);
+}
+
+.middle:nth-child(8){
+  transform: translateZ(8px);
+}
+
+.middle:nth-child(9){
+  transform: translateZ(9px);
+}
+
+@keyframes spin{
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
