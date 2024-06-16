@@ -12,19 +12,22 @@ height: 100vh;
 text-align: center;
 }
 
-#link-outro-site {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  padding: 8px 12px; /* Adiciona espaçamento interno */
-  background-color: #ff5733; /* Cor de fundo */
-  color: white; /* Cor do texto */
-  border-radius: 5px; /* Bordas arredondadas */
-  text-decoration: none; /* Remove sublinhado padrão de links */
+.links-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
-
-#link-outro-site:hover {
-  background-color: #ff7f50; /* Altera a cor de fundo ao passar o mouse */
+.link-outro-site {
+    padding: 8px 12px; /* Adiciona espaçamento interno */
+    background-color: #ff5733; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado padrão de links */
+    display: block;
+    margin-bottom: 10px; /* Espaço opcional entre os links */
+}
+.link-outro-site:hover {
+    background-color: #ff7f50; /* Altera a cor de fundo ao passar o mouse */
 }
 
 
